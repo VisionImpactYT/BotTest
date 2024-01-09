@@ -1,7 +1,10 @@
 print("Smith")
 
-first_name = "Freddy"
+first_name = "Fred"
 print(first_name)
 
-last_name = "The Second"
+last_name = "Development"
 print(last_name)
+
+middle_name = "Developers"
+print(middle_name)
