@@ -1,10 +1,10 @@
-print("Smith")
+import discord
 
-first_name = "Fred"
-print(first_name)
+client = discord.Client()
 
-last_name = "Development"
-print(last_name)
+@client.event
+async def on_ready():
+    print(f'{client.user} has connected to Discord!')
+    await client.change_presence(activity=discord.Game(name="Your game here"))
 
-middle_name = "Developers"
-print(middle_name)
+client.run('MTE5MTA1OTAwODcwMjkxODc4OA.GqTo0x.hX1cjrwRJ8j1IVL8yPrwW_a1CR_YER2bIYMdDc')
